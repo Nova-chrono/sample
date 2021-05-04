@@ -62,25 +62,31 @@ ul li a:hover {
 @media (max-width: 768px) {
     .nav-bar .nav-links {
         /* height: 100vh; */
-        position: fixed;
+        /* position: fixed;
         top: 0;
         right: 0;
         left: 0;
         z-index: 10;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: center; */
         /* background: #000; */
-        transition: top 1s ease;
-        display: none;
+        /* transition: top 1s ease;
+        display: none; */
     }
 
-    .nav-bar .nav-links, .closeMenu {
-        display: block;
+    .nav-bar .nav-links{
+        display: none;
         position: absolute;
-        top: 20px;
-        right: 20px;
+        top: 50px;
+        right: 50px;
         
+    }
+    .nav-links.show {
+        display: block;
+    }
+    .nav-links.hide {
+        display: none;
     }
 
     .nav-bar .openMenu {
